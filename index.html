@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gana Dinero Rápidamente</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div id="app-container">
+        <!-- Header with Logo -->
+        <header>
+            <img src="assets/logo.png" alt="Logo" class="logo">
+            <div id="points-display">Puntos: 0</div>
+            <button id="redeem-button" class="hidden">Canjear Puntos</button>
+            <button id="login-button">Iniciar sesión</button>
+            <button id="logout-button" class="hidden">Cerrar sesión</button>
+        </header>
+
+        <!-- Login Section -->
+        <section id="login-section" class="hidden">
+            <h2>Iniciar sesión</h2>
+            <input type="text" id="username" placeholder="Usuario" required>
+            <input type="password" id="password" placeholder="Contraseña" required>
+            <button id="login-submit">Ingresar</button>
+            <div id="login-error" class="hidden">Usuario o contraseña incorrectos</div>
+        </section>
+
+        <!-- Question Section -->
+        <section id="question-section" class="hidden">
+            <h2 id="question-text">Pregunta</h2>
+            <div id="options">
+                <button class="option-button" data-option="1">Opción 1</button>
+                <button class="option-button" data-option="2">Opción 2</button>
+                <button class="option-button" data-option="3">Opción 3</button>
+            </div>
+        </section>
+
+        <!-- Redeem Section -->
+        <section id="redeem-section" class="hidden">
+            <h2>Canjear Puntos</h2>
+            <div id="redeem-options">
+                <button class="redeem-option" data-points="8000">8000 Puntos - 1 dólar</button>
+                <button class="redeem-option" data-points="16000">16000 Puntos - 2 dólares</button>
+                <button class="redeem-option" data-points="32000">32000 Puntos - 4 dólares</button>
+                <button class="redeem-option" data-points="64000">64000 Puntos - 8 dólares</button>
+                <button class="redeem-option" data-points="80000">80000 Puntos - 10 dólares</button>
+            </div>
+            <button id="generate-code-button">Generar Código</button>
+            <div id="generated-code"></div>
+        </section>
+    </div>
+    <script src="js/scripts.js"></script>
+</body>
+</html>
